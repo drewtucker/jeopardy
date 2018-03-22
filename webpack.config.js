@@ -5,7 +5,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
 
-const projectName = "ArticleAnalyzer";
+const projectName = "jeopardy";
 
 
 module.exports = {
@@ -23,7 +23,7 @@ module.exports = {
     new UglifyJsPlugin({sourceMap:true}),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: `ArticleAnalyzer`,
+      title: `jeopardy`,
       template: './src/index.html',
       inject: 'body'
     })

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jeopardy</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>JEOPARDY</h1>
+      <form id="nameEntry" class="form-control" method="post">
+        <label for="player1name">Player 1:</label>
+        <input id="player1name" type="text" name="player1name">
+        <label for="player2name">Player 2:</label>
+        <input id="player2name" type="text" name="player2name">
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+<hr>
+
+  <div class="col-md-8">
+
+
+  <p id="randomCategory"></p>
+  <p id="randomValue"></p>
+  <div id="randomClue">
+
+  </div>
+
+<form id="answerForm" class="form-control" method="post">
+  <label for="userAnswer">Answer:</label>
+  <input id="userAnswer" type="text" name="userAnswer">
+  <button class="btn btn-success" type="submit">What is...</button>
+</form>
+<br>
+<a id="randomQuestion" class="btn btn-warning">Random Question</a>
+
+</div>
+
+
+  <div id="showError">
+
+  </div>
+
+
+
+
+    </div>
+  </body>
+</html>
